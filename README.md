@@ -11,12 +11,14 @@ Autômatos devem ser descritos em arquivos conforme o seguinte exemplo:
 >B B 1
 
 ### Para checar se uma palavra é aceita por um autômato
-`python3 simular.py <arquivo do automato> <palavra>` 
-Exemplo:
+Comando:\
+`python3 simular.py <arquivo do automato> <palavra>`\
+Exemplo:\
 `python3 simular.py inputs/automato1 101`
 
 ### Para converter um AFN para AFD
-`python3 simular.py <arquivo automato1> <arquivo automato2>` 
-Exemplo:
-`python3 simular.py inputs/automato1 inputs/automato2`
+Comando:\
+`python3 convertAFN.py <arquivo automato1> <arquivo automato2>`\
+Exemplo:\
+`python3 convertAFN.py inputs/automato1 inputs/automato2`
 

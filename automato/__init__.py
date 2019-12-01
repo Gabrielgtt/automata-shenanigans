@@ -53,17 +53,17 @@ class Automato:
 		Recursivamente percorre os estados do automato enquanto itera sobre uma palavra
 		Caso a execução termine em um estado final (de aceitação) return true, do contrário, false.
 	"""
-	def aceita(self, idx, palavra, estadoAtual):
-		palavraRestante = "e" if idx == len(palavra) else palavra[idx:]
-		print("{0}                {1}".format(estadoAtual, palavraRestante))
+	def aceita(self, idx, palavra, estado_atual):
+		palavra_restante = "e" if idx == len(palavra) else palavra[idx:]
+		print("{0}                {1}".format(estado_atual, palavra_restante))
 
 		if idx == len(palavra):
-			return estadoAtual in self.finais
+			return estado_atual in self.finais
 
 		deu = False
-		for caracter, novoEstado in self.estados[estadoAtual]:
+		for caracter, novo_estado in self.estados[estado_atual]:
 			if caracter == palavra[idx]:
-				deu = deu or self.aceita(idx+1, palavra, novoEstado)
+				deu = deu or self.aceita(idx+1, palavra, novo_estado)
 
 		return deu
 

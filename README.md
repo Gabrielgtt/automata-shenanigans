@@ -2,12 +2,12 @@
 Implementação de algumas operações com autômatos.\
 Todos os códigos foram feito em python3!\
 Autômatos devem ser descritos em arquivos conforme o seguinte exemplo:
->estados A, B
->inicial A
->aceita B
->A B 0
->B A 0
->A A 1
+>estados A, B\
+>inicial A\
+>aceita B\
+>A B 0\
+>B A 0\
+>A A 1\
 >B B 1
 
 ### Para checar se uma palavra é aceita por um autômato

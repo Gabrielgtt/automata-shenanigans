@@ -18,7 +18,18 @@ Exemplo:\
 
 ### Para converter um AFN para AFD
 Comando:\
-`python3 convertAFN.py <arquivo automato1> <arquivo automato2>`\
+`python3 converte_AFN.py <arquivo automato>`\
 Exemplo:\
-`python3 convertAFN.py inputs/automato1 inputs/automato2`
+`python3 converte_AFN.py inputs/automato1`
 
+### Para obter o complemento de um autômato
+Comando:\
+`python3 complemento_automato.py <arquivo automato>`\
+Exemplo:\
+`python3 complemento_automato.py inputs/automato1`
+
+### Para obter a união entre dois autômatos
+Comando:\
+`python3 uniao_automatos.py <arquivo automato1> <arquivo automato2>`\
+Exemplo:\
+`python3 uniao_automatos.py inputs/automato1 inputs/automato2`

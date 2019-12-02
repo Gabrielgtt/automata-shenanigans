@@ -38,7 +38,7 @@ def converteNFA(automato):
 					masksE[e] |= masksE[estado]
 					finalizado = finalizado and (velha_mask == masksE[e])
 
-	estadosF = estados
+	estadosF = {}
 	finaisF = []
 	inicioF = mask_to_str( (1 << etoi[inicio]) | masksE[inicio], n, itoe)
 
